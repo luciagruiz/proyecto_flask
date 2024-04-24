@@ -12,76 +12,76 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>{%block titulopag%}{%endblock%}</title>
+  <title>{% block titulopag %}{% endblock %}</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet" />
 </head>
 
 <body>
-  <body>
-    <div class="hero_area">
-      <!-- header section strats -->
-      <header class="header_section">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="pelota de baloncesto" /><span>
-                {%block titulo%}{%endblock%}
-              </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-                <ul class="navbar-nav  ">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio<span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/buscador"> Buscador</a>
-                  </li>
-                </ul>
-              </div>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="pelota de baloncesto" /><span>
+              {% block titulo %}{% endblock %}
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Inicio<span class="sr-only">(actual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/equipos">Buscar Equipo</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
-      </header>
-      <!-- end header section -->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
 
-  <main>
-    {%block contenido%}
+    <main>
+      {% block contenido %}
       <!-- Aquí va el contenido de las páginas que hereden de esta plantilla -->
-    {%endblock%}
-  </main>
+      {% endblock %}
+    </main>
 
-  <footer>
-    <!-- footer section -->
-    <section class="container-fluid footer_section">
-      <p>
-        Lucía Garrote Ruiz <br>
-        1º ASIR - IES Gonzalo Nazareno - Curso 2023/2024
-      </p>
-    </section>
-    <!-- footer section -->
-  </footer>
+    <footer>
+      <!-- footer section -->
+      <section class="container-fluid footer_section">
+        <p>
+          Lucía Garrote Ruiz <br>
+          1º ASIR - IES Gonzalo Nazareno - Curso 2023/2024
+        </p>
+      </section>
+      <!-- footer section -->
+    </footer>
 
-  <!-- JavaScript -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+  </div>
 </body>
 
 </html>
