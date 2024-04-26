@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
-{% block titulopag %}Buscador{% endblock %}
+{% block titulopag %}Buscador NBA{% endblock %}
 
 {% block titulo %}Buscador NBA{% endblock %}
 
 {% block contenido %}
 <section class="contenedor">
-   <h1>Buscador</h1>
+   <h2 class="buscador">Buscador</h2>
    <figure><a href="/buscador"><img class="img" src="{{ url_for('static', filename='images/nbalogo.png') }}" alt="imagen" /></a></figure>
-   <p>Pulsa la imagen para acceder al buscador.</p>
+   <br>
+   <br>
 </section>
 {% endblock %}
