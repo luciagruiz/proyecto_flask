@@ -9,7 +9,7 @@
 <form class="buscador" action="/equipos" method="POST">
   <input type="text" name="busqueda" placeholder="Nombre del equipo" value="{{ busqueda }}">
   <select name="criterio">
-      <option value="">Selecciona un criterio de búsqueda</option>
+      <option value="">Selecciona una Conferencia</option>
       <option value="Este" {% if criterio == 'Este' %} selected {% endif %}>Conferencia Este</option>
       <option value="Oeste" {% if criterio == 'Oeste' %} selected {% endif %}>Conferencia Oeste</option>
   </select>

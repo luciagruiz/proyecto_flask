@@ -5,16 +5,18 @@
 {% block titulopag %}Detalle del Equipo{% endblock %}
 
 {% block contenido %}
-<h1>Detalle del Equipo</h1>
-<h2>{{ equipo.teamName }}</h2>
-<p>Abreviatura: {{ equipo.abbreviation }}</p>
-<p>Ubicación: {{ equipo.location }}</p>
-<p>Conferencia: {{ equipo.conference }}</p>
-<p>Jugadores:</p>
-<ul>
-    {% for player in equipo.players %}
-    <li>{{ player.name }} ({{ player.age }} años, {{ player.height_cm }} cm)</li>
-    {% endfor %}
-</ul>
-<a href="/equipos">Volver a la lista de equipos</a>
+<h1 class="buscador">Detalle del Equipo</h1>
+<div class="centrado">
+    <h2>{{ equipo.teamName }}</h2>
+    <p>Abreviatura: {{ equipo.abbreviation }}</p>
+    <p>Ubicación: {{ equipo.location }}</p>
+    <p>Conferencia: {{ equipo.conference }}</p>
+    <p>Jugadores:</p>
+    <ul>
+        {% for player in equipo.players %}
+        <li>{{ player.name }} ({{ player.age }} años, {{ player.height_cm }} cm)</li>
+        {% endfor %}
+    </ul>
+    <a href="/equipos">Volver a la lista de equipos</a>
+</div>
 {% endblock %}

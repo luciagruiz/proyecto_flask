@@ -545,3 +545,7 @@ td a {
 td a:hover {
   text-decoration: underline;
 }
+
+.centrado {
+  padding: 25px;
+}
