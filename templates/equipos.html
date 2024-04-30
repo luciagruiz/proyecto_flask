@@ -1,41 +1,13 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
-{% block titulopag %}Listado de Equipos de Baloncesto{% endblock %}
+{% block titulo %}Buscador NBA{% endblock %}
 
-{% block titulo %}Listado de Equipos de Baloncesto{% endblock %}
+{% block titulopag %}Buscar Equipos{% endblock %}
 
 {% block contenido %}
-<form action="/equipos" method="post">
-  <label for="equipo">Buscar Equipo:</label>
-  <input type="text" id="equipo" name="equipo" placeholder="Nombre del Equipo" value="{{ request.form.equipo }}">
-  
-  <label for="criterio">Seleccionar Criterio:</label>
-  <select id="criterio" name="criterio">
-    <option value="">Seleccione...</option>
-    {% for equipo in equipos %}
-    <option value="{{ equipo.abbreviation }}" {% if request.form.criterio == equipo.abbreviation %}selected{% endif %}>{{ equipo.teamName }}</option>
-    {% endfor %}
-  </select>
-  
-  <button type="submit">Buscar</button>
+<h1>Buscar Equipos</h1>
+<form action="/equipos" method="POST">
+    <input type="text" name="busqueda" placeholder="Nombre del equipo">
+    <button type="submit">Buscar</button>
 </form>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Otra Información</th>
-      <th>Detalle</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for equipo in equipos %}
-    <tr>
-      <td>{{ equipo.teamName }}</td>
-      <td>{{ equipo.abbreviation }}</td>
-      <td><a href="/equipo/{{ equipo.teamId }}">Detalle</a></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
 {% endblock %}
