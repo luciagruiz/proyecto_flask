@@ -5,9 +5,36 @@
 {% block titulopag %}Buscar Equipos{% endblock %}
 
 {% block contenido %}
-<h1>Buscar Equipos</h1>
-<form action="/equipos" method="POST">
-    <input type="text" name="busqueda" placeholder="Nombre del equipo">
-    <button type="submit">Buscar</button>
+<h1 class="buscador">Buscar Equipos</h1>
+<form class="buscador" action="/equipos" method="POST">
+  <input type="text" name="busqueda" placeholder="Nombre del equipo" value="{{ busqueda }}">
+  <select name="criterio">
+      <option value="">Selecciona un criterio de búsqueda</option>
+      <option value="Este" {% if criterio == 'Este' %} selected {% endif %}>Conferencia Este</option>
+      <option value="Oeste" {% if criterio == 'Oeste' %} selected {% endif %}>Conferencia Oeste</option>
+  </select>
+  <button type="submit">Buscar</button>
 </form>
+<br>
+{% if equipos %}
+<table>
+  <thead>
+      <tr>
+          <th>Nombre</th>
+          <th>Conferencia</th>
+          <th>Detalle</th>
+      </tr>
+  </thead>
+  <tbody>
+      {% for equipo in equipos %}
+      <tr>
+          <td>{{ equipo.teamName }}</td>
+          <td>{{ equipo.conference }}</td>
+          <td><a href="/equipo/{{ equipo.teamId }}">Detalle</a></td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
 {% endblock %}

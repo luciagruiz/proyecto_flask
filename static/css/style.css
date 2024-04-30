@@ -508,5 +508,40 @@ a:focus {
 .buscador{
   text-align: center;
   padding: 25px;
-  text-decoration: dashed;
+  
+}
+
+/* Estilo para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilo para las celdas de la tabla */
+td, th {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Estilo para las filas impares */
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para las celdas de encabezado */
+th {
+  background-color: #a11603;
+  color: white;
+}
+
+/* Estilo para los enlaces en las celdas */
+td a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Estilo para los enlaces en las celdas cuando se les pasa el ratón por encima */
+td a:hover {
+  text-decoration: underline;
 }

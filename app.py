@@ -14,14 +14,24 @@ def inicio():
 
 @app.route('/equipos', methods=['GET', 'POST'])
 def equipos():
+    # Obtener la cadena de búsqueda y el criterio de búsqueda desde el formulario
+    busqueda = request.form.get('busqueda', '').lower()
+    criterio = request.form.get('criterio', '')
+
+    # Filtrar equipos según la búsqueda y el criterio
+    if busqueda:
+        equipos_encontrados = [equipo for equipo in datos if equipo['teamName'].lower().startswith(busqueda)]
+    elif criterio:
+        equipos_encontrados = [equipo for equipo in datos if equipo['conference'] == criterio]
+    else:
+        equipos_encontrados = datos
+
+    # Si se envió un formulario, mostrar la lista de equipos encontrados
     if request.method == 'POST':
-        busqueda = request.form.get('busqueda', '').lower()
-        if busqueda:
-            equipos_encontrados = [equipo for equipo in datos if equipo['teamName'].lower().startswith(busqueda)]
-        else:
-            equipos_encontrados = datos
-        return redirect(url_for('listaequipos', equipos=json.dumps(equipos_encontrados)))
-    return render_template("equipos.html")
+        return render_template("equipos.html", equipos=equipos_encontrados, busqueda=busqueda, criterio=criterio)
+
+    # Si es una solicitud GET, mostrar el formulario vacío
+    return render_template("equipos.html", equipos=datos)
 
 @app.route('/listaequipos', methods=['GET', 'POST'])
 def listaequipos():
