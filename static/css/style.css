@@ -213,8 +213,6 @@ a:focus {
   background-repeat: no-repeat;
 }
 
-.slider_item-container .slider_item-detail {}
-
 .slider_item-detail h1 {
   font-weight: 700;
   font-size: 60px;
@@ -403,13 +401,6 @@ a:focus {
 
 /* contact section */
 
-.contact_section {
-  background-image: url(../images/orange-dish.png);
-  background-repeat: no-repeat;
-  background-size: 215px;
-  background-position: right center;
-}
-
 .contact_section input {
   border: none;
   outline: none;
@@ -512,4 +503,10 @@ a:focus {
 
 .contenedor figure img {
   padding: 10px;
+}
+
+.buscador{
+  text-align: center;
+  padding: 25px;
+  text-decoration: dashed;
 }

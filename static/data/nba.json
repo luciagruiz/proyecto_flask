@@ -1,0 +1,222 @@
+[
+    {
+      "teamName": "Atlanta Hawks",
+      "teamId": 1,
+      "abbreviation": "ATL",
+      "location": "Atlanta",
+      "conference": "Este",
+      "players": [
+        {"name": "Trae Young", "age": 23, "height_cm": 187},
+        {"name": "John Collins", "age": 24, "height_cm": 203},
+        {"name": "Clint Capela", "age": 27, "height_cm": 211},
+        {"name": "Bogdan Bogdanović", "age": 29, "height_cm": 198}
+      ]
+    },
+    {
+      "teamName": "Boston Celtics",
+      "teamId": 2,
+      "abbreviation": "BOS",
+      "location": "Boston",
+      "conference": "Este",
+      "players": [
+        {"name": "Jayson Tatum", "age": 23, "height_cm": 203},
+        {"name": "Jaylen Brown", "age": 25, "height_cm": 198},
+        {"name": "Marcus Smart", "age": 27, "height_cm": 193},
+        {"name": "Al Horford", "age": 35, "height_cm": 208},
+        {"name": "Robert Williams III", "age": 24, "height_cm": 206}
+      ]
+    },
+    {
+      "teamName": "Brooklyn Nets",
+      "teamId": 3,
+      "abbreviation": "BKN",
+      "location": "Brooklyn",
+      "conference": "Este",
+      "players": [
+        {"name": "Kevin Durant", "age": 33, "height_cm": 208},
+        {"name": "James Harden", "age": 32, "height_cm": 196},
+        {"name": "Kyrie Irving", "age": 29, "height_cm": 193}
+      ]
+    },
+    {
+      "teamName": "Charlotte Hornets",
+      "teamId": 4,
+      "abbreviation": "CHA",
+      "location": "Charlotte",
+      "conference": "Este",
+      "players": [
+        {"name": "LaMelo Ball", "age": 20, "height_cm": 198},
+        {"name": "Gordon Hayward", "age": 31, "height_cm": 203},
+        {"name": "Terry Rozier", "age": 27, "height_cm": 188},
+        {"name": "Miles Bridges", "age": 24, "height_cm": 201}
+      ]
+    },
+    {
+      "teamName": "Chicago Bulls",
+      "teamId": 5,
+      "abbreviation": "CHI",
+      "location": "Chicago",
+      "conference": "Este",
+      "players": [
+        {"name": "Zach LaVine", "age": 26, "height_cm": 196},
+        {"name": "Nikola Vučević", "age": 31, "height_cm": 211},
+        {"name": "DeMar DeRozan", "age": 32, "height_cm": 201}
+      ]
+    },
+    {
+      "teamName": "Cleveland Cavaliers",
+      "teamId": 6,
+      "abbreviation": "CLE",
+      "location": "Cleveland",
+      "conference": "Este",
+      "players": [
+        {"name": "Darius Garland", "age": 22, "height_cm": 188},
+        {"name": "Jarrett Allen", "age": 23, "height_cm": 211},
+        {"name": "Evan Mobley", "age": 20, "height_cm": 211},
+        {"name": "Collin Sexton", "age": 23, "height_cm": 190}
+      ]
+    },
+    {
+      "teamName": "Dallas Mavericks",
+      "teamId": 7,
+      "abbreviation": "DAL",
+      "location": "Dallas",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Luka Dončić", "age": 22, "height_cm": 201},
+        {"name": "Kristaps Porziņģis", "age": 26, "height_cm": 221},
+        {"name": "Tim Hardaway Jr.", "age": 29, "height_cm": 198},
+        {"name": "Jalen Brunson", "age": 25, "height_cm": 190}
+      ]
+    },
+    {
+      "teamName": "Denver Nuggets",
+      "teamId": 8,
+      "abbreviation": "DEN",
+      "location": "Denver",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Nikola Jokić", "age": 26, "height_cm": 211},
+        {"name": "Jamal Murray", "age": 24, "height_cm": 193},
+        {"name": "Michael Porter Jr.", "age": 23, "height_cm": 203},
+        {"name": "Aaron Gordon", "age": 26, "height_cm": 203}
+      ]
+    },
+    {
+      "teamName": "Detroit Pistons",
+      "teamId": 9,
+      "abbreviation": "DET",
+      "location": "Detroit",
+      "conference": "Este",
+      "players": [
+        {"name": "Cade Cunningham", "age": 20, "height_cm": 201},
+        {"name": "Jerami Grant", "age": 27, "height_cm": 203},
+        {"name": "Saddiq Bey", "age": 22, "height_cm": 203},
+        {"name": "Isaiah Stewart", "age": 20, "height_cm": 208}
+      ]
+    },
+    {
+      "teamName": "Golden State Warriors",
+      "teamId": 10,
+      "abbreviation": "GSW",
+      "location": "Golden State",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Stephen Curry", "age": 33, "height_cm": 190},
+        {"name": "Klay Thompson", "age": 32, "height_cm": 201},
+        {"name": "Draymond Green", "age": 31, "height_cm": 201}
+      ]
+    },
+    {
+      "teamName": "Houston Rockets",
+      "teamId": 11,
+      "abbreviation": "HOU",
+      "location": "Houston",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Jalen Green", "age": 20, "height_cm": 196},
+        {"name": "Christian Wood", "age": 26, "height_cm": 211},
+        {"name": "Kevin Porter Jr.", "age": 21, "height_cm": 198},
+        {"name": "Jae'Sean Tate", "age": 26, "height_cm": 198}
+      ]
+    },
+    {
+      "teamName": "Indiana Pacers",
+      "teamId": 12,
+      "abbreviation": "IND",
+      "location": "Indiana",
+      "conference": "Este",
+      "players": [
+        {"name": "Domantas Sabonis", "age": 25, "height_cm": 208},
+        {"name": "Myles Turner", "age": 25, "height_cm": 211},
+        {"name": "Caris LeVert", "age": 27, "height_cm": 198},
+        {"name": "Malcolm Brogdon", "age": 29, "height_cm": 193}
+      ]
+    },
+    {
+      "teamName": "Los Angeles Clippers",
+      "teamId": 13,
+      "abbreviation": "LAC",
+      "location": "Los Angeles",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Kawhi Leonard", "age": 30, "height_cm": 201},
+        {"name": "Paul George", "age": 32, "height_cm": 203},
+        {"name": "Reggie Jackson", "age": 31, "height_cm": 191}
+      ]
+    },
+    {
+      "teamName": "Los Angeles Lakers",
+      "teamId": 14,
+      "abbreviation": "LAL",
+      "location": "Los Angeles",
+      "conference": "Oeste",
+      "players": [
+        {"name": "LeBron James", "age": 37, "height_cm": 206},
+        {"name": "Anthony Davis", "age": 28, "height_cm": 208},
+        {"name": "Russell Westbrook", "age": 33, "height_cm": 191},
+        {"name": "Carmelo Anthony", "age": 37, "height_cm": 203}
+      ]
+    },
+    {
+      "teamName": "Memphis Grizzlies",
+      "teamId": 15,
+      "abbreviation": "MEM",
+      "location": "Memphis",
+      "conference": "Oeste",
+      "players": [
+        {"name": "Ja Morant", "age": 22, "height_cm": 191},
+        {"name": "Jaren Jackson Jr.", "age": 22, "height_cm": 208},
+        {"name": "Dillon Brooks", "age": 26, "height_cm": 198},
+        {"name": "Desmond Bane", "age": 23, "height_cm": 198},
+        {"name": "Steven Adams", "age": 28, "height_cm": 211}
+      ]
+    },
+    {
+      "teamName": "Miami Heat",
+      "teamId": 16,
+      "abbreviation": "MIA",
+      "location": "Miami",
+      "conference": "Este",
+      "players": [
+        {"name": "Jimmy Butler", "age": 32, "height_cm": 201},
+        {"name": "Bam Adebayo", "age": 24, "height_cm": 208},
+        {"name": "Tyler Herro", "age": 21, "height_cm": 198},
+        {"name": "Kyle Lowry", "age": 35, "height_cm": 183}
+      ]
+    },
+    {
+      "teamName": "Milwaukee Bucks",
+      "teamId": 17,
+      "abbreviation": "MIL",
+      "location": "Milwaukee",
+      "conference": "Este",
+      "players": [
+        {"name": "Giannis Antetokounmpo", "age": 27, "height_cm": 211},
+        {"name": "Khris Middleton", "age": 30, "height_cm": 203},
+        {"name": "Jrue Holiday", "age": 31, "height_cm": 193},
+        {"name": "Brook Lopez", "age": 33, "height_cm": 213},
+        {"name": "Grayson Allen", "age": 26, "height_cm": 196}
+      ]
+    }
+]
